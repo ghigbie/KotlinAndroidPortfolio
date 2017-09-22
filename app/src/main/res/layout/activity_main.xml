@@ -41,33 +41,34 @@
         tools:layout_editor_absoluteY="173dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageCamera"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/camerabutton"
         tools:layout_editor_absoluteY="245dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageStar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageInbox"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageCamera"
         app:srcCompat="@drawable/favoritebutton"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="245dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageInbox"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageStar"
         app:srcCompat="@drawable/inboxbutton"
         tools:layout_editor_absoluteX="237dp"
         tools:layout_editor_absoluteY="245dp" />
