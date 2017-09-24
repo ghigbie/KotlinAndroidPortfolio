@@ -90,38 +90,34 @@
 
     <ImageView
         android:id="@+id/dataImage"
-        android:layout_width="117dp"
-        android:layout_height="93dp"
-        android:scaleType="centerCrop"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/dataimage"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="340dp" />
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="337dp" />
 
     <ImageView
         android:id="@+id/videoImage"
-        android:layout_width="118dp"
-        android:layout_height="98dp"
-        android:scaleType="centerCrop"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/videosimage"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="453dp" />
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="465dp" />
 
     <ImageView
         android:id="@+id/imageImage"
-        android:layout_width="114dp"
-        android:layout_height="99dp"
-        android:scaleType="centerCrop"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/imagesimage"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="340dp" />
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="337dp" />
 
     <ImageView
         android:id="@+id/codeImage"
-        android:layout_width="114dp"
-        android:layout_height="100dp"
-        android:scaleType="centerCrop"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/codeimage"
-        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteX="228dp"
         tools:layout_editor_absoluteY="451dp" />
 
 </android.support.constraint.ConstraintLayout>
