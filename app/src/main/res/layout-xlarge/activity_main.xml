@@ -89,47 +89,59 @@
 
     <ImageView
         android:id="@+id/dataImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
         android:scaleType="centerCrop"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintEnd_toStartOf="@id/guideline2"
-        app:srcCompat="@drawable/dataimage"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/dataimage" />
 
     <ImageView
         android:id="@+id/videoImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
         android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dataImage"
-        app:srcCompat="@drawable/videosimage"/>
+        app:srcCompat="@drawable/videosimage" />
 
     <ImageView
         android:id="@+id/imageImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:scaleType="centerCrop"
-        app:layout_constraintStart_toEndOf="@id/guideline2"
-        app:srcCompat="@drawable/imagesimage"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dataImage"
+        app:layout_constraintTop_toTopOf="@+id/dataImage"
+        app:srcCompat="@drawable/imagesimage" />
 
     <ImageView
         android:id="@+id/codeImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
         android:scaleType="centerCrop"
-        app:layout_constraintTop_toBottomOf="@id/imageImage"
-        app:layout_constraintStart_toEndOf="@id/guideline2"
-        app:srcCompat="@drawable/codeimage"/>
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/videoImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageImage"
+        app:srcCompat="@drawable/codeimage" />
 
 
 
