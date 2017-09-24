@@ -36,20 +36,20 @@
         android:layout_marginTop="48dp"
         android:text="@string/devslopes"
         android:textSize="38sp"
-        app:layout_constraintStart_toEndOf="@+id/logo"
-        app:layout_constraintTop_toBottomOf="@+id/banner" />
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@id/banner" />
 
     <ImageView
         android:id="@+id/imageCamera"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageFavorite"
-        app:layout_constraintEnd_toStartOf="@+id/imageFavorite"
+        app:layout_constraintBottom_toBottomOf="@id/imageFavorite"
+        app:layout_constraintEnd_toStartOf="@id/imageFavorite"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@+id/devslopesText"
-        app:layout_constraintTop_toTopOf="@+id/imageFavorite"
+        app:layout_constraintStart_toEndOf="@id/devslopesText"
+        app:layout_constraintTop_toTopOf="@id/imageFavorite"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/camerabutton" />
 
@@ -62,8 +62,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageStar"
         app:layout_constraintEnd_toStartOf="@+id/imageStar"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageCamera"
-        app:layout_constraintTop_toTopOf="@+id/imageStar"
+        app:layout_constraintStart_toEndOf="@id/imageCamera"
+        app:layout_constraintTop_toTopOf="@id/imageStar"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/favoritebutton" />
 
@@ -74,8 +74,8 @@
         android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageFavorite"
-        app:layout_constraintTop_toBottomOf="@+id/banner"
+        app:layout_constraintStart_toEndOf="@id/imageFavorite"
+        app:layout_constraintTop_toBottomOf="@id/banner"
         app:srcCompat="@drawable/inboxbutton"
         tools:layout_editor_absoluteX="701dp"
         tools:layout_editor_absoluteY="316dp" />
@@ -92,8 +92,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:layout_marginTop="44dp"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
         app:srcCompat="@drawable/dataimage"
         tools:layout_editor_absoluteY="586dp" />
 
@@ -104,8 +106,8 @@
         android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/dataImage"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/dataImage"
         app:srcCompat="@drawable/videosimage"/>
 
     <ImageView
@@ -114,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:scaleType="centerCrop"
-        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
         app:srcCompat="@drawable/imagesimage"
         tools:layout_editor_absoluteY="586dp" />
 
@@ -126,7 +128,7 @@
         android:layout_marginStart="32dp"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toBottomOf="@id/imageImage"
-        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
         app:srcCompat="@drawable/codeimage"/>
 
 
