@@ -37,8 +37,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:text="@string/devslopes"
-        app:layout_constraintStart_toEndOf="@+id/logo"
-        app:layout_constraintTop_toBottomOf="@+id/banner"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@id/banner"
         tools:layout_editor_absoluteY="173dp" />
 
     <ImageView
@@ -46,11 +46,11 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageStar"
+        app:layout_constraintEnd_toStartOf="@id/imageStar"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         app:srcCompat="@drawable/camerabutton" />
 
     <ImageView
@@ -59,11 +59,11 @@
         android:layout_height="50dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageCamera"
-        app:layout_constraintEnd_toStartOf="@+id/imageInbox"
+        app:layout_constraintBottom_toBottomOf="@id/imageCamera"
+        app:layout_constraintEnd_toStartOf="@id/imageInbox"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageCamera"
-        app:layout_constraintTop_toTopOf="@+id/imageCamera"
+        app:layout_constraintStart_toEndOf="@id/imageCamera"
+        app:layout_constraintTop_toTopOf="@id/imageCamera"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/favoritebutton"
         tools:layout_editor_absoluteY="264dp" />
@@ -76,8 +76,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageStar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageStar"
-        app:layout_constraintTop_toTopOf="@+id/imageStar"
+        app:layout_constraintStart_toEndOf="@id/imageStar"
+        app:layout_constraintTop_toTopOf="@id/imageStar"
         app:layout_constraintVertical_bias="0.79"
         app:srcCompat="@drawable/inboxbutton"
         tools:layout_editor_absoluteY="264dp" />
@@ -97,8 +97,8 @@
         android:layout_marginTop="32dp"
         android:scaleType="centerCrop"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageCamera"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/imageCamera"
         app:srcCompat="@drawable/dataimage" />
 
     <ImageView
@@ -111,10 +111,10 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/dataImage"
-        app:layout_constraintTop_toBottomOf="@+id/dataImage"
+        app:layout_constraintStart_toStartOf="@id/dataImage"
+        app:layout_constraintTop_toBottomOf="@id/dataImage"
         app:layout_constraintVertical_bias="0.529"
         app:srcCompat="@drawable/videosimage" />
 
@@ -125,8 +125,8 @@
         android:layout_marginStart="8dp"
         android:scaleType="centerCrop"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/dataImage"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@id/dataImage"
         app:srcCompat="@drawable/imagesimage" />
 
     <ImageView
@@ -139,9 +139,9 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@+id/imageImage"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageImage"
+        app:layout_constraintEnd_toEndOf="@id/imageImage"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/imageImage"
         app:srcCompat="@drawable/codeimage" />
 
 </android.support.constraint.ConstraintLayout>
