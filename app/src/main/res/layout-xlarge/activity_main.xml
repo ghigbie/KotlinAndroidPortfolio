@@ -112,7 +112,7 @@
         android:id="@+id/imageImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="32dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toEndOf="@+id/guideline2"
         app:srcCompat="@drawable/imagesimage"
@@ -122,6 +122,11 @@
         android:id="@+id/codeImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/imageImage"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
         app:srcCompat="@drawable/codeimage"/>
 
 
