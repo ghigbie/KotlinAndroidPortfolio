@@ -143,6 +143,4 @@
         app:srcCompat="@drawable/codeimage" />
 
 
-
-
 </android.support.constraint.ConstraintLayout>
