@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         //rounded.isCircular(true) //this will set the image to circular
         logo.setImageDrawable(rounded)
 
+        
 
     }
 }
