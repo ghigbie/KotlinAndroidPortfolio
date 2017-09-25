@@ -33,12 +33,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:text="@string/devslopes"
-        android:textSize="32sp"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@id/logo"
         app:layout_constraintTop_toBottomOf="@id/banner"/>
+
+    <ImageView
+        android:id="@+id/imageCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/camerabutton"
+        tools:layout_editor_absoluteX="767dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <ImageView
+        android:id="@+id/imageStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/favoritebutton"
+        tools:layout_editor_absoluteX="837dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <ImageView
+        android:id="@+id/imageInbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/inboxbutton"
+        tools:layout_editor_absoluteX="904dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <Button
+        android:id="@+id/buttonBottom"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/customize"
+        tools:layout_editor_absoluteX="986dp"
+        tools:layout_editor_absoluteY="164dp" />
 
 
 </android.support.constraint.ConstraintLayout>
