@@ -59,8 +59,8 @@
         android:layout_height="50dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageStar"
-        app:layout_constraintEnd_toStartOf="@+id/imageStar"
+        app:layout_constraintBottom_toBottomOf="@id/imageStar"
+        app:layout_constraintEnd_toStartOf="@id/imageStar"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@id/imageCamera"
         app:layout_constraintTop_toTopOf="@id/imageStar"
@@ -96,9 +96,9 @@
         android:layout_marginTop="44dp"
         android:scaleType="centerCrop"
         app:layout_constraintDimensionRatio="16:9"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         app:srcCompat="@drawable/dataimage" />
 
     <ImageView
@@ -125,7 +125,7 @@
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/dataImage"
+        app:layout_constraintTop_toTopOf="@id/dataImage"
         app:srcCompat="@drawable/imagesimage" />
 
     <ImageView
@@ -139,7 +139,7 @@
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageImage"
+        app:layout_constraintTop_toBottomOf="@id/imageImage"
         app:srcCompat="@drawable/codeimage" />
 
 
