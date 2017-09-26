@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="89dp">
 
 
     <ImageView
@@ -31,6 +33,7 @@
         app:srcCompat="@drawable/devslopesprofilelogo" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -44,14 +47,23 @@
         android:id="@+id/imageCamera"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:srcCompat="@drawable/camerabutton"
-        tools:layout_editor_absoluteX="767dp"
-        tools:layout_editor_absoluteY="182dp" />
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        app:srcCompat="@drawable/camerabutton" />
 
     <ImageView
         android:id="@+id/imageStar"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCamera"
+        app:layout_constraintEnd_toStartOf="@+id/imageInbox"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageCamera"
+        app:layout_constraintTop_toTopOf="@+id/imageCamera"
         app:srcCompat="@drawable/favoritebutton"
         tools:layout_editor_absoluteX="837dp"
         tools:layout_editor_absoluteY="182dp" />
@@ -60,6 +72,11 @@
         android:id="@+id/imageInbox"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageStar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBottom"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageStar"
+        app:layout_constraintTop_toTopOf="@+id/imageStar"
         app:srcCompat="@drawable/inboxbutton"
         tools:layout_editor_absoluteX="901dp"
         tools:layout_editor_absoluteY="182dp" />
@@ -68,11 +85,11 @@
         android:id="@+id/buttonBottom"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="@string/customize"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/banner"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="@string/customize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner" />
 
 
 </android.support.constraint.ConstraintLayout>
