@@ -87,6 +87,7 @@
     <Button
         android:id="@+id/buttonBottom"
         android:layout_width="250dp"
+        android:background="@drawable/rounded_gradient"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
