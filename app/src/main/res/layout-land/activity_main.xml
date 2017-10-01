@@ -42,41 +42,82 @@
 
     <ImageView
         android:id="@+id/imageCamera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageInbox"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@id/devslopesText"
-        app:layout_constraintTop_toBottomOf="@id/banner"
-        app:srcCompat="@drawable/camerabutton"
-        tools:layout_editor_absoluteY="134dp" />
-
-    <ImageView
-        android:id="@+id/imageInbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageFavorite"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageCamera"
-        app:layout_constraintTop_toTopOf="@id/imageCamera"
-        app:srcCompat="@drawable/inboxbutton"
-        tools:layout_editor_absoluteY="134dp" />
+        android:layout_marginTop="22dp"
+        app:layout_constraintEnd_toStartOf="@id/imageStar"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        app:srcCompat="@drawable/camerabutton" />
 
     <ImageView
-        android:id="@+id/imageFavorite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageInbox"
+        android:id="@+id/imageStar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toStartOf="@id/imageInbox"
         app:layout_constraintTop_toTopOf="@id/imageCamera"
         app:srcCompat="@drawable/favoritebutton" />
 
+    <ImageView
+        android:id="@+id/imageInbox"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageCamera"
+        app:srcCompat="@drawable/inboxbutton" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="154dp" />
+
+    <ImageView
+        android:id="@+id/dataImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/dataimage"
+        />
+
+    <ImageView
+        android:id="@+id/imageImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/imagesimage"
+        />
+
+    <ImageView
+        android:id="@+id/videoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/videosimage"
+        />
+
+    <ImageView
+        android:id="@+id/codeImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/codeimage"
+        />
 
 </android.support.constraint.ConstraintLayout>
