@@ -44,10 +44,12 @@
         android:id="@+id/imageCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toStartOf="@+id/imageInbox"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@+id/devslopesText"
+        app:layout_constraintStart_toEndOf="@id/devslopesText"
+        app:layout_constraintTop_toBottomOf="@id/banner"
         app:srcCompat="@drawable/camerabutton"
         tools:layout_editor_absoluteY="134dp" />
 
@@ -56,9 +58,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/imageFavorite"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageCamera"
+        app:layout_constraintTop_toTopOf="@id/imageCamera"
         app:srcCompat="@drawable/inboxbutton"
         tools:layout_editor_absoluteY="134dp" />
 
@@ -66,12 +71,12 @@
         android:id="@+id/imageFavorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layoutTop="0dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageInbox"
-        app:srcCompat="@drawable/favoritebutton"
-        tools:layout_editor_absoluteY="134dp" />
+        app:layout_constraintTop_toTopOf="@id/imageCamera"
+        app:srcCompat="@drawable/favoritebutton" />
 
 
 </android.support.constraint.ConstraintLayout>
