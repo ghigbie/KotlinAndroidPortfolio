@@ -2,8 +2,11 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
 
     <ImageView
         android:id="@+id/banner"
@@ -23,13 +26,52 @@
         android:layout_marginTop="90dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/devslopesprofilelogo"/>
+        app:srcCompat="@drawable/devslopesprofilelogo" />
 
     <TextView
         android:id="@+id/devslopesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/devslopes"
-        android:textSize="14sp"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@id/banner" />
+
+    <ImageView
+        android:id="@+id/imageCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/imageInbox"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/devslopesText"
+        app:srcCompat="@drawable/camerabutton"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <ImageView
+        android:id="@+id/imageInbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageFavorite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageCamera"
+        app:srcCompat="@drawable/inboxbutton"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <ImageView
+        android:id="@+id/imageFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageInbox"
+        app:srcCompat="@drawable/favoritebutton"
+        tools:layout_editor_absoluteY="134dp" />
+
 
 </android.support.constraint.ConstraintLayout>
